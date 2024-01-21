@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Address Book</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--  -->
+    <div class="address-book">
+      <h1>Address Book</h1>
+      <div class="controls">
+        <input type="text" id="searchInput" placeholder="Search " />
+        <button id="addContactBtn">Add</button>
+      </div>
+      <ul id="contactList"></ul>
+      <ul id="contactList"></ul>
+    </div>
+
+    <!-- modal for the contact form -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <form id="contactForm" class="form">
+          <span class="close">&times;</span>
+          <div class="modal-inputs">
+            <div>
+              <label for="name">Name:</label> <br />
+              <input
+                type="text"
+                id="name"
+                class="input-field"
+                name="name"
+                required
+              />
+            </div>
+            <div>
+              <label for="surname">Surname:</label><br />
+              <input
+                type="text"
+                id="surname"
+                class="input-field"
+                name="surname"
+                required
+              />
+            </div>
+            <div>
+              <label for="phoneNumber">Phone Number:</label><br />
+              <input
+                type="text"
+                id="phoneNumber"
+                class="input-field"
+                name="phoneNumber"
+                required
+              />
+            </div>
+            <div>
+              <label for="address">Address:</label><br />
+              <input
+                type="text"
+                id="address"
+                class="input-field"
+                name="address"
+                required
+              />
+            </div>
+          </div>
+          <!-- <span class="close">&times;</span> -->
+          <button type="submit" class="save-button">Save</button>
+        </form>
+      </div>
+    </div>
+
+    <!--  -->
+    <!-- form -->
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
